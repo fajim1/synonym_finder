@@ -8,6 +8,12 @@ from word_handler import find_synonyms_in_paragraphs, read_paragraphs_from_docx
 def main():
     # Prompt the user to enter a target directory and a search word
     target_directory = input("Enter the target directory: ")
+
+    # Check if the input directory exists
+    if not os.path.exists(target_directory):
+        print("The specified directory does not exist. Please provide a valid directory path.")
+        return
+    
     search_word = input("Enter the word you want to find synonyms for: ")
 
     # Use os.walk to iterate over all files in the directory tree
