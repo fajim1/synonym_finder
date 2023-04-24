@@ -21,7 +21,7 @@ This Python-based project allows you to search for synonyms of a given word in M
 
 1. Clone the repository:
 
-git clone https://github.com/fajim1/word_search.git
+git clone https://github.com/fajim1/synonym_finder.git
 cd synonym-finder
 
 
